@@ -20,7 +20,7 @@ function calculateProfitAndLoss(intial,stocksquantity,current){
         let profitPer = (profit/intial)*100;
 
         output.style.color ="rgb(0,100,0)";
-         output.innerHTML ="YAYY!1 YOU HAVE A PROFIT OF RUPEES "+ profit + " AND YOUR PROFIT PERCENTAGE IS "+ profitPer + "% 👍😊";
+         output.innerHTML ="YAYY! YOU HAVE A PROFIT OF RUPEES "+ profit + " AND YOUR PROFIT PERCENTAGE IS "+ profitPer + "% 👍😊";
     }
     else{
         output.style.color = " #491368";
