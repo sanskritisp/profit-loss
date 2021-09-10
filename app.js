@@ -9,17 +9,19 @@ function calculateProfitAndLoss(intial,stocksquantity,current){
         let loss = (intial-current)*stocksquantity;
         let lossPer = (loss/intial)*100;
 
-        console.log("loss is " + loss +"percent is "+ lossPer);
+        output.innerHTML ="OOPS! YOU HAVE A LOSS OF RUPEES "+ loss + " AND YOUR LOSS PERCENTAGE IS "+ lossPer + "%.";
+
+       
     }    
     else if(current>intial)
     {
         let profit = (current-intial)*stocksquantity;
         let profitPer = (profit/intial)*100;
 
-        console.log("profit is " + profit +"percent is "+ profitPer);
+         output.innerHTML ="YAYY!1 YOU HAVE A PROFIT OF RUPEES "+ profit + " AND YOUR PROFIT PERCENTAGE IS "+ profitPer + "%.";
     }
     else{
-        console.log("NO CHANGES In THE STOCK");
+        output.innerHTML  = "NO CHANGES IN THE STOCK";
     }
 }
 function submitHandler(){
